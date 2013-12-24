@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VFDViewController : UIViewController
+@interface VFDTopViewController : UIViewController
 
 @end

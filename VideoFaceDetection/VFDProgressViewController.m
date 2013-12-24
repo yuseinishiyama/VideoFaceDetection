@@ -11,7 +11,8 @@
 #import "VFDVideoReader.h"
 
 @interface VFDProgressViewController ()
-
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 @end
 
 @implementation VFDProgressViewController
@@ -32,15 +33,34 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)_startProcessing
 {
+    [_indicator startAnimating];
+    [_statusLabel setText:@"Now Detecting..."];
+    
+    __weak VFDProgressViewController *weakSelf = self;
+    
     _reader = [[VFDVideoReader alloc] init];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        [_reader readFromURL:_targetURL];
+        [_reader readFromURL:_targetURL complitionHandler:^(NSArray *allFeatures) {
+            [weakSelf _endProcessing:allFeatures];
+        }];
     });
+}
+
+- (void)_endProcessing:(NSArray *)allFeatures
+{
+    [_indicator stopAnimating];
+    [_statusLabel setText:@"Finish"];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Finish"
+                                                    message:[allFeatures description]
+                                                   delegate:nil
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
 }
 
 @end

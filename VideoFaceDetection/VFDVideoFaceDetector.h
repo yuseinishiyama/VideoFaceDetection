@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^VFDVideoReaderCompletionHandler)(NSArray *allFeatures);
+
 @interface VFDVideoReader : NSObject
-- (void)readFromURL:(NSURL *)targetURL;
+- (void)readFromURL:(NSURL *)targetURL
+  complitionHandler:(VFDVideoReaderCompletionHandler)completionHandler;
 @end
