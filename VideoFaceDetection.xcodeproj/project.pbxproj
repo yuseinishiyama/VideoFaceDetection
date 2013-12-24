@@ -23,7 +23,7 @@
 		945479B018696EF500920166 /* VideoFaceDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479AF18696EF500920166 /* VideoFaceDetectionTests.m */; };
 		945479BA1869731D00920166 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945479B91869731D00920166 /* MobileCoreServices.framework */; };
 		945479BD186975C800920166 /* VFDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479BC186975C800920166 /* VFDProgressViewController.m */; };
-		945479C1186979C300920166 /* VFDVideoReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479C0186979C300920166 /* VFDVideoReader.m */; };
+		945479C1186979C300920166 /* VFDVideoFaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479C0186979C300920166 /* VFDVideoFaceDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		945479B91869731D00920166 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		945479BB186975C800920166 /* VFDProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDProgressViewController.h; sourceTree = "<group>"; };
 		945479BC186975C800920166 /* VFDProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDProgressViewController.m; sourceTree = "<group>"; };
-		945479BF186979C300920166 /* VFDVideoReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDVideoReader.h; sourceTree = "<group>"; };
-		945479C0186979C300920166 /* VFDVideoReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDVideoReader.m; sourceTree = "<group>"; };
+		945479BF186979C300920166 /* VFDVideoFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDVideoFaceDetector.h; sourceTree = "<group>"; };
+		945479C0186979C300920166 /* VFDVideoFaceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDVideoFaceDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +168,8 @@
 		945479BE1869798600920166 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				945479BF186979C300920166 /* VFDVideoReader.h */,
-				945479C0186979C300920166 /* VFDVideoReader.m */,
+				945479BF186979C300920166 /* VFDVideoFaceDetector.h */,
+				945479C0186979C300920166 /* VFDVideoFaceDetector.m */,
 			);
 			name = Video;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945479C1186979C300920166 /* VFDVideoReader.m in Sources */,
+				945479C1186979C300920166 /* VFDVideoFaceDetector.m in Sources */,
 				9454799118696EF500920166 /* main.m in Sources */,
 				9454799518696EF500920166 /* VFDAppDelegate.m in Sources */,
 				945479BD186975C800920166 /* VFDProgressViewController.m in Sources */,

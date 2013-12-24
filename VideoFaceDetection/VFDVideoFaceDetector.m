@@ -6,15 +6,15 @@
 //  Copyright (c) 2013年 Yusei Nishiyama. All rights reserved.
 //
 
-#import "VFDVideoReader.h"
+#import "VFDVideoFaceDetector.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface VFDVideoReader ()
+@interface VFDVideoFaceDetector ()
 @property (nonatomic, copy) VFDVideoReaderCompletionHandler completionHandler;
 @end
 
-@implementation VFDVideoReader {
+@implementation VFDVideoFaceDetector {
     AVAsset *_asset;
     CIDetector *_detector;
     NSMutableArray *_allFeatures;
@@ -33,7 +33,7 @@
 {
     self.completionHandler = completionHandler;
     [self _setupDetector];
-    __weak VFDVideoReader *weakSelf = self;
+    __weak VFDVideoFaceDetector *weakSelf = self;
     _asset = [AVAsset assetWithURL:targetURL];
     [_asset loadValuesAsynchronouslyForKeys:@[@"tracks"] completionHandler:^{
         [weakSelf _startReading];

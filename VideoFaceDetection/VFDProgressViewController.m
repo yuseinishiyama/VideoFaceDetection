@@ -8,7 +8,7 @@
 
 #import "VFDProgressViewController.h"
 
-#import "VFDVideoReader.h"
+#import "VFDVideoFaceDetector.h"
 
 @interface VFDProgressViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
@@ -17,7 +17,7 @@
 
 @implementation VFDProgressViewController
 {
-    VFDVideoReader *_reader;
+    VFDVideoFaceDetector *_reader;
 }
 
 - (void)viewDidLoad
@@ -42,7 +42,7 @@
     
     __weak VFDProgressViewController *weakSelf = self;
     
-    _reader = [[VFDVideoReader alloc] init];
+    _reader = [[VFDVideoFaceDetector alloc] init];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         [_reader readFromURL:_targetURL complitionHandler:^(NSArray *allFeatures) {
             [weakSelf _endProcessing:allFeatures];

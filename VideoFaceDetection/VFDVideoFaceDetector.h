@@ -10,7 +10,7 @@
 
 typedef void(^VFDVideoReaderCompletionHandler)(NSArray *allFeatures);
 
-@interface VFDVideoReader : NSObject
+@interface VFDVideoFaceDetector : NSObject
 - (void)readFromURL:(NSURL *)targetURL
   complitionHandler:(VFDVideoReaderCompletionHandler)completionHandler;
 @end
