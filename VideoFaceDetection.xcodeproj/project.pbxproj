@@ -21,6 +21,9 @@
 		945479A618696EF500920166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798818696EF500920166 /* UIKit.framework */; };
 		945479AE18696EF500920166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945479AC18696EF500920166 /* InfoPlist.strings */; };
 		945479B018696EF500920166 /* VideoFaceDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479AF18696EF500920166 /* VideoFaceDetectionTests.m */; };
+		945479BA1869731D00920166 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945479B91869731D00920166 /* MobileCoreServices.framework */; };
+		945479BD186975C800920166 /* VFDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479BC186975C800920166 /* VFDProgressViewController.m */; };
+		945479C1186979C300920166 /* VFDVideoReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479C0186979C300920166 /* VFDVideoReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		945479AB18696EF500920166 /* VideoFaceDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoFaceDetectionTests-Info.plist"; sourceTree = "<group>"; };
 		945479AD18696EF500920166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		945479AF18696EF500920166 /* VideoFaceDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoFaceDetectionTests.m; sourceTree = "<group>"; };
+		945479B91869731D00920166 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		945479BB186975C800920166 /* VFDProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDProgressViewController.h; sourceTree = "<group>"; };
+		945479BC186975C800920166 /* VFDProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDProgressViewController.m; sourceTree = "<group>"; };
+		945479BF186979C300920166 /* VFDVideoReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDVideoReader.h; sourceTree = "<group>"; };
+		945479C0186979C300920166 /* VFDVideoReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDVideoReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945479BA1869731D00920166 /* MobileCoreServices.framework in Frameworks */,
 				9454798718696EF500920166 /* CoreGraphics.framework in Frameworks */,
 				9454798918696EF500920166 /* UIKit.framework in Frameworks */,
 				9454798518696EF500920166 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		9454798318696EF500920166 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				945479B91869731D00920166 /* MobileCoreServices.framework */,
 				9454798418696EF500920166 /* Foundation.framework */,
 				9454798618696EF500920166 /* CoreGraphics.framework */,
 				9454798818696EF500920166 /* UIKit.framework */,
@@ -112,11 +122,14 @@
 		9454798A18696EF500920166 /* VideoFaceDetection */ = {
 			isa = PBXGroup;
 			children = (
+				945479BE1869798600920166 /* Video */,
 				9454799318696EF500920166 /* VFDAppDelegate.h */,
 				9454799418696EF500920166 /* VFDAppDelegate.m */,
 				9454799618696EF500920166 /* Main.storyboard */,
 				9454799918696EF500920166 /* VFDViewController.h */,
 				9454799A18696EF500920166 /* VFDViewController.m */,
+				945479BB186975C800920166 /* VFDProgressViewController.h */,
+				945479BC186975C800920166 /* VFDProgressViewController.m */,
 				9454799C18696EF500920166 /* Images.xcassets */,
 				9454798B18696EF500920166 /* Supporting Files */,
 			);
@@ -150,6 +163,15 @@
 				945479AC18696EF500920166 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		945479BE1869798600920166 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				945479BF186979C300920166 /* VFDVideoReader.h */,
+				945479C0186979C300920166 /* VFDVideoReader.m */,
+			);
+			name = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945479C1186979C300920166 /* VFDVideoReader.m in Sources */,
 				9454799118696EF500920166 /* main.m in Sources */,
 				9454799518696EF500920166 /* VFDAppDelegate.m in Sources */,
+				945479BD186975C800920166 /* VFDProgressViewController.m in Sources */,
 				9454799B18696EF500920166 /* VFDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +407,7 @@
 				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
 				INFOPLIST_FILE = "VideoFaceDetection/VideoFaceDetection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A7EDB47-49B3-4775-B6F4-5FF1ED1FE77D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,6 +421,7 @@
 				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
 				INFOPLIST_FILE = "VideoFaceDetection/VideoFaceDetection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A7EDB47-49B3-4775-B6F4-5FF1ED1FE77D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
