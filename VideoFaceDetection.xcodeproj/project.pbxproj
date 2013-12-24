@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9454798518696EF500920166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798418696EF500920166 /* Foundation.framework */; };
+		9454798718696EF500920166 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798618696EF500920166 /* CoreGraphics.framework */; };
+		9454798918696EF500920166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798818696EF500920166 /* UIKit.framework */; };
+		9454798F18696EF500920166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9454798D18696EF500920166 /* InfoPlist.strings */; };
+		9454799118696EF500920166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454799018696EF500920166 /* main.m */; };
+		9454799518696EF500920166 /* VFDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454799418696EF500920166 /* VFDAppDelegate.m */; };
+		9454799818696EF500920166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9454799618696EF500920166 /* Main.storyboard */; };
+		9454799B18696EF500920166 /* VFDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454799A18696EF500920166 /* VFDViewController.m */; };
+		9454799D18696EF500920166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9454799C18696EF500920166 /* Images.xcassets */; };
+		945479A418696EF500920166 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945479A318696EF500920166 /* XCTest.framework */; };
+		945479A518696EF500920166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798418696EF500920166 /* Foundation.framework */; };
+		945479A618696EF500920166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9454798818696EF500920166 /* UIKit.framework */; };
+		945479AE18696EF500920166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945479AC18696EF500920166 /* InfoPlist.strings */; };
+		945479B018696EF500920166 /* VideoFaceDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945479AF18696EF500920166 /* VideoFaceDetectionTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		945479A718696EF500920166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9454797918696EF500920166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9454798018696EF500920166;
+			remoteInfo = VideoFaceDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9454798118696EF500920166 /* VideoFaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoFaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9454798418696EF500920166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9454798618696EF500920166 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9454798818696EF500920166 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9454798C18696EF500920166 /* VideoFaceDetection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoFaceDetection-Info.plist"; sourceTree = "<group>"; };
+		9454798E18696EF500920166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9454799018696EF500920166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9454799218696EF500920166 /* VideoFaceDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoFaceDetection-Prefix.pch"; sourceTree = "<group>"; };
+		9454799318696EF500920166 /* VFDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFDAppDelegate.h; sourceTree = "<group>"; };
+		9454799418696EF500920166 /* VFDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFDAppDelegate.m; sourceTree = "<group>"; };
+		9454799718696EF500920166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9454799918696EF500920166 /* VFDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFDViewController.h; sourceTree = "<group>"; };
+		9454799A18696EF500920166 /* VFDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFDViewController.m; sourceTree = "<group>"; };
+		9454799C18696EF500920166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		945479A218696EF500920166 /* VideoFaceDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoFaceDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		945479A318696EF500920166 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		945479AB18696EF500920166 /* VideoFaceDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoFaceDetectionTests-Info.plist"; sourceTree = "<group>"; };
+		945479AD18696EF500920166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		945479AF18696EF500920166 /* VideoFaceDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoFaceDetectionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9454797E18696EF500920166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9454798718696EF500920166 /* CoreGraphics.framework in Frameworks */,
+				9454798918696EF500920166 /* UIKit.framework in Frameworks */,
+				9454798518696EF500920166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9454799F18696EF500920166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945479A418696EF500920166 /* XCTest.framework in Frameworks */,
+				945479A618696EF500920166 /* UIKit.framework in Frameworks */,
+				945479A518696EF500920166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9454797818696EF500920166 = {
+			isa = PBXGroup;
+			children = (
+				9454798A18696EF500920166 /* VideoFaceDetection */,
+				945479A918696EF500920166 /* VideoFaceDetectionTests */,
+				9454798318696EF500920166 /* Frameworks */,
+				9454798218696EF500920166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9454798218696EF500920166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9454798118696EF500920166 /* VideoFaceDetection.app */,
+				945479A218696EF500920166 /* VideoFaceDetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9454798318696EF500920166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9454798418696EF500920166 /* Foundation.framework */,
+				9454798618696EF500920166 /* CoreGraphics.framework */,
+				9454798818696EF500920166 /* UIKit.framework */,
+				945479A318696EF500920166 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9454798A18696EF500920166 /* VideoFaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				9454799318696EF500920166 /* VFDAppDelegate.h */,
+				9454799418696EF500920166 /* VFDAppDelegate.m */,
+				9454799618696EF500920166 /* Main.storyboard */,
+				9454799918696EF500920166 /* VFDViewController.h */,
+				9454799A18696EF500920166 /* VFDViewController.m */,
+				9454799C18696EF500920166 /* Images.xcassets */,
+				9454798B18696EF500920166 /* Supporting Files */,
+			);
+			path = VideoFaceDetection;
+			sourceTree = "<group>";
+		};
+		9454798B18696EF500920166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9454798C18696EF500920166 /* VideoFaceDetection-Info.plist */,
+				9454798D18696EF500920166 /* InfoPlist.strings */,
+				9454799018696EF500920166 /* main.m */,
+				9454799218696EF500920166 /* VideoFaceDetection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		945479A918696EF500920166 /* VideoFaceDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				945479AF18696EF500920166 /* VideoFaceDetectionTests.m */,
+				945479AA18696EF500920166 /* Supporting Files */,
+			);
+			path = VideoFaceDetectionTests;
+			sourceTree = "<group>";
+		};
+		945479AA18696EF500920166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				945479AB18696EF500920166 /* VideoFaceDetectionTests-Info.plist */,
+				945479AC18696EF500920166 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9454798018696EF500920166 /* VideoFaceDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 945479B318696EF500920166 /* Build configuration list for PBXNativeTarget "VideoFaceDetection" */;
+			buildPhases = (
+				9454797D18696EF500920166 /* Sources */,
+				9454797E18696EF500920166 /* Frameworks */,
+				9454797F18696EF500920166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoFaceDetection;
+			productName = VideoFaceDetection;
+			productReference = 9454798118696EF500920166 /* VideoFaceDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		945479A118696EF500920166 /* VideoFaceDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 945479B618696EF500920166 /* Build configuration list for PBXNativeTarget "VideoFaceDetectionTests" */;
+			buildPhases = (
+				9454799E18696EF500920166 /* Sources */,
+				9454799F18696EF500920166 /* Frameworks */,
+				945479A018696EF500920166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				945479A818696EF500920166 /* PBXTargetDependency */,
+			);
+			name = VideoFaceDetectionTests;
+			productName = VideoFaceDetectionTests;
+			productReference = 945479A218696EF500920166 /* VideoFaceDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9454797918696EF500920166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VFD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Yusei Nishiyama";
+				TargetAttributes = {
+					945479A118696EF500920166 = {
+						TestTargetID = 9454798018696EF500920166;
+					};
+				};
+			};
+			buildConfigurationList = 9454797C18696EF500920166 /* Build configuration list for PBXProject "VideoFaceDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9454797818696EF500920166;
+			productRefGroup = 9454798218696EF500920166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9454798018696EF500920166 /* VideoFaceDetection */,
+				945479A118696EF500920166 /* VideoFaceDetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9454797F18696EF500920166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9454799D18696EF500920166 /* Images.xcassets in Resources */,
+				9454798F18696EF500920166 /* InfoPlist.strings in Resources */,
+				9454799818696EF500920166 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945479A018696EF500920166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945479AE18696EF500920166 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9454797D18696EF500920166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9454799118696EF500920166 /* main.m in Sources */,
+				9454799518696EF500920166 /* VFDAppDelegate.m in Sources */,
+				9454799B18696EF500920166 /* VFDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9454799E18696EF500920166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945479B018696EF500920166 /* VideoFaceDetectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		945479A818696EF500920166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9454798018696EF500920166 /* VideoFaceDetection */;
+			targetProxy = 945479A718696EF500920166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9454798D18696EF500920166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9454798E18696EF500920166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9454799618696EF500920166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9454799718696EF500920166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		945479AC18696EF500920166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				945479AD18696EF500920166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		945479B118696EF500920166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		945479B218696EF500920166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		945479B418696EF500920166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
+				INFOPLIST_FILE = "VideoFaceDetection/VideoFaceDetection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		945479B518696EF500920166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
+				INFOPLIST_FILE = "VideoFaceDetection/VideoFaceDetection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		945479B718696EF500920166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoFaceDetection.app/VideoFaceDetection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VideoFaceDetectionTests/VideoFaceDetectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		945479B818696EF500920166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoFaceDetection.app/VideoFaceDetection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoFaceDetection/VideoFaceDetection-Prefix.pch";
+				INFOPLIST_FILE = "VideoFaceDetectionTests/VideoFaceDetectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9454797C18696EF500920166 /* Build configuration list for PBXProject "VideoFaceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945479B118696EF500920166 /* Debug */,
+				945479B218696EF500920166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		945479B318696EF500920166 /* Build configuration list for PBXNativeTarget "VideoFaceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945479B418696EF500920166 /* Debug */,
+				945479B518696EF500920166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		945479B618696EF500920166 /* Build configuration list for PBXNativeTarget "VideoFaceDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945479B718696EF500920166 /* Debug */,
+				945479B818696EF500920166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9454797918696EF500920166 /* Project object */;
+}
